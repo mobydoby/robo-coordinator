@@ -41,7 +41,7 @@ Lastly, while traditional fleet management shines in warehouse and factory setti
 
 ## Design
 ### Chosen Architecture
-![Architecture](diagrams/coordination_architecture_diagram.jpg)
+![Architecture](system_design/diagrams/coordination_architecture_diagram.jpg)
 
 ### Major Cloud Service Decisions
 **Kinesis Video Streams** is the optimal choice for our architecture because it's specifically designed to handle continuous high-resolution video and sensor data streams from multiple robots simultaneously, which is shown in the diagram as a primary input channel. Unlike Kinesis Data Streams, which is optimized for text-based telemetry, Kinesis Video Streams provides native support for time-indexed video frames and large binary sensor data (like LiDAR point clouds) that are essential for creating the immersive L3/4 3D Digital Twin shown in our architecture. While IoT Core could technically transport this data, it's optimized for small, intermittent messages rather than continuous high-bandwidth video streaming. Kinesis Video Streams offers specialized features for video processing including frame-level indexing, built-in video playback capabilities, and integration with media processing services that IoT Core doesn't provide. This direct integration pathway enables near real-time digital twin updates and ensures that all visual data is properly synchronized with the task information flowing through IoT Core, providing a situational awareness for the Coordinator model on the cloud.
