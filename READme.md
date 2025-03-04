@@ -1,4 +1,8 @@
 # Robotic Fleet Coordinator Inference Architecture
+
+![Architecture](system_design/diagrams/coordination_architecture_diagram.jpg)
+[Design Details](#chosen-architecture)
+
 This design document outlines the inference, deployment, and training pipelines for a hypothetical multi-physical agent coordination system for autonomous construction machinery or similar use cases. This document is over simplified, and the actual implementation of such a production system would be much more involved. However, this design showcases some recent developments in AI, robotics, cloud, and simulation technologies that could enable a system to be realized in the near future (<10 years). I hope you share my enthusiasm for the possibilities!
 
 ## Outline
