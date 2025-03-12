@@ -10,8 +10,7 @@ This design document outlines the inference, deployment, and training pipelines 
 2. [Background](#background)
 3. [Requirements](#requirements)
 4. [Design](#design)
-5. [Future Work](#future-work)
-6. [Conclusion](#conclusion)
+5. [Conclusion](#conclusion)
 
 ## Purpose
 To truly leverage physical AI at a large scale, a coordination framework between different agents is necessary to align the individual workcell (autonomous mobile robots) objectives with higher level goals. This design uses a building construction project as an example to highlight how coordination-enabled autonomous robotics can achieve such a task using AWS cloud services. This design achieves this by creating a virtual digital twin using AWS IoT Twinmaker to create a live model of the work site/environment and a Vision-Language-Action (VLA) Model to comprehend the scene and send top-down instructions from an example instruction set. On the Edge, Operator VLA models comprehend top-down instructions from the cloud and ouput low level controls. The incoming video data is streamed and stored to create the digital twin but to also create a data lake for offline periodic training using simulation software like IsaacSim. Higher level orchestration and planning must be a coordinated effort acrossh
