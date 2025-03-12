@@ -8,7 +8,7 @@ This design document outlines the inference, deployment, and training pipelines 
 ## Outline
 1. [Purpose](#purpose)
 2. [Background](#background)
-3. [Requirements](#requirements)
+3. [Tenents](#design-tenents)
 4. [Design](#design)
 5. [Conclusion](#conclusion)
 
